@@ -10,5 +10,9 @@ abstract class Cuenta(nombre:String, monto:Int) {
             field = valor
         }
 
-
+    open fun mostrarInformacion() {
+        println("Caja ahorro: \n" +
+                "Titular: $nombreTitular\n" +
+                "Monto: $monto")
+    }
 }
